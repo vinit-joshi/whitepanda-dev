@@ -21,11 +21,6 @@ $(function() {
     };
     //navbarFixed(); TODO Need to remove this permanently
 
-    //------- Parallax -------//
-  skrollr.init({
-    forceHeight: false
-  });
-
 
 
   //------- mailchimp --------//  
