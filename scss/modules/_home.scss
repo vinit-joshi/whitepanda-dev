@@ -1,4 +1,61 @@
 
+.card-category{
+  /*background: $white;*/
+
+  .card-category-body{
+    padding: 20px 25px;
+    box-shadow: 0px 10px 20px 0px rgba(14, 30, 112, 0.1);
+    @include transition;
+
+    @media(min-width: 1200px){
+      padding: 25px 2px 30px 25px;
+    }
+
+    h4{
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    p{
+      margin-bottom: 0;
+    }
+  }
+  
+  &:hover{
+
+    .card-category-body{
+     /*  */
+    }
+  }
+
+  .card-category-author {
+    margin-top: 1em
+  }
+}
+
+.card-category-info{
+  margin-bottom: 15px;
+
+  li{
+    display: inline-block;
+    font-size: 14px;
+    color: #888888;
+    margin-right: 25px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    a{
+      color: #888888;
+    }
+
+    i,span{
+      margin-right: 5px;
+    }
+  }
+}
+
 .service-card{
   background: #f8f8ff;
   @include transition;
