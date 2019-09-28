@@ -1,0 +1,88 @@
+/* banner section start
+	============================================================================================ */
+.hero-banner{
+  padding-top: 120px;
+
+  @media(min-width: 992px){
+    padding-top: 160px;
+  }
+
+  h1{
+    margin-bottom: 15px;
+
+    @media(max-width: 1200px){
+      font-size: 40px;
+    }
+
+    @media(max-width: 991px){
+      font-size: 30px;
+    }
+  }
+}
+
+.hero-banner-sm{
+  padding-top: 140px;
+  padding-bottom: 90px;
+
+  @media(min-width: 992px){
+    padding-top: 240px;
+    padding-bottom: 140px;
+  }
+
+  h1{
+
+    @media(max-width: 991px){
+      font-size: 38px;
+    }
+
+    @media(max-width: 768px){
+      font-size: 28px;
+    }
+  }
+
+  p{
+    margin-bottom: 0;
+  }
+}
+
+.hero-banner-sm-content{
+  max-width: 400px;
+}
+
+/* banner section end
+  ============================================================================================ */
+
+
+
+/* breadcrumb section start
+  ============================================================================================ */
+  .banner-breadcrumb{
+    display: inline-block;
+    
+    .breadcrumb{
+      background: transparent;
+      padding: 0;
+  
+      &-item{
+        padding: .1rem;
+  
+        a{
+          text-transform: capitalize;
+          color: #fff;
+        }
+  
+        &+.breadcrumb-item::before{
+          color: #fff;
+          padding-left: .2rem;
+          padding-right: .4rem;
+          // content: "-";
+        }
+  
+        &.active{
+          color: #fff;
+        }
+      }
+    }
+  }
+/* breadcrumb section end
+  ============================================================================================ */
