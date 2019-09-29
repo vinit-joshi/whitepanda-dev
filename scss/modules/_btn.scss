@@ -1,9 +1,10 @@
 /*=================== custom button rule start ====================*/
 .button{
   display: inline-block;
-  background-color: $primary-color;
-  color: $white;
-  border-radius: 30px;
+  background-color: $white;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
   padding: 8px 25px;
   text-transform: capitalize;
   @include transition;
