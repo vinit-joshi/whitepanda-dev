@@ -3,8 +3,39 @@
 .faq-box {
   border-top: 1px solid #ddd; }
 
-.accordion {
-  border-bottom: 1px solid #ddd; }
+.panel-heading {
+  border-top: 1px solid #ddd; }
+
+.panel-body {
+  padding: 5px 5px;
+  margin-bottom: 5px; }
+
+.panel-heading {
+  padding: 5px 5px; }
+
+.panel-heading .accordion-toggle {
+  font-size: 0.7em;
+  color: #000; }
+
+.panel-heading .accordion-toggle:after {
+  /* symbol for "opening" panels */
+  font-family: 'Font Awesome 5 Free';
+  /* essential for enabling glyphicon */
+  font-style: normal;
+  font-weight: 900;
+  content: "\f107";
+  /* adjust as needed, taken from bootstrap.css */
+  float: right;
+  /* adjust as needed */
+  color: grey;
+  /* adjust as needed */
+  vertical-align: middle;
+  padding: 5px 5px; }
+
+.panel-heading .accordion-toggle.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\f105";
+  /* adjust as needed, taken from bootstrap.css */ }
 
 .slider-box {
   min-height: 120px;
@@ -1958,5 +1989,79 @@ button.button {
 
 /* footer style end
 	============================================================================================ */
+@media (min-width: 768px) {
+  #creatorCarousel {
+    /* show 3 items */
+    /* left or forward direction */
+    /* farthest right hidden item must be abso position for animations */
+    /* right or prev direction */ }
+    #creatorCarousel .carousel-inner .active,
+    #creatorCarousel .carousel-inner .active + .carousel-item,
+    #creatorCarousel .carousel-inner .active + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      display: block; }
+    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      transition: none; }
+    #creatorCarousel .carousel-inner .carousel-item-next,
+    #creatorCarousel .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0); }
+    #creatorCarousel .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -25%;
+      z-index: -1;
+      display: block;
+      visibility: visible; }
+    #creatorCarousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    #creatorCarousel .carousel-item-next.carousel-item-left + .carousel-item,
+    #creatorCarousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible; }
+    #creatorCarousel .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible; }
+    #creatorCarousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    #creatorCarousel .carousel-item-prev.carousel-item-right + .carousel-item,
+    #creatorCarousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
+    #creatorCarousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible; } }
+
+#genreCarousel .carousel-inner .carousel-item.active,
+#genreCarousel .carousel-inner .carousel-item-next,
+#genreCarousel .carousel-inner .carousel-item-prev {
+  display: flex; }
+#genreCarousel .carousel-inner .carousel-item-right.active,
+#genreCarousel .carousel-inner .carousel-item-next {
+  transform: translateX(33%); }
+#genreCarousel .carousel-inner .carousel-item-left.active,
+#genreCarousel .carousel-inner .carousel-item-prev {
+  transform: translateX(-33%); }
+#genreCarousel .carousel-inner .carousel-item-right,
+#genreCarousel .carousel-inner .carousel-item-left {
+  transform: translateX(0); }
 
 /*# sourceMappingURL=style.css.map */
