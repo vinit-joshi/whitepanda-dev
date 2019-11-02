@@ -33,9 +33,9 @@ $(function() {
             for (var i = 0; i < it; i++) {
                 // append slides to end
                 if (e.direction == "left") {
-                    $('#creatorCarousel .carousel-item').eq(i).appendTo('#creatorCarousel .carousel-inner');
+                    $('#creatorCarousel .carousel-item').eq(i).appendTo('#creatorCarousel .carousel-inner').animate("fast");
                 } else {
-                    $('#creatorCarousel .carousel-item').eq(0).appendTo('#creatorCarousel .carousel-inner');
+                    $('#creatorCarousel .carousel-item').eq(0).appendTo('#creatorCarousel .carousel-inner').animate("fast");
                 }
             }
         }

@@ -935,16 +935,14 @@ h3, .h3 {
 /* Testimonial section end
 ============================================================================================ */
 .card-blog {
-  /*background: $white;*/ }
+  /*background: $white;*/
+  padding: 10px 15px; }
   .card-blog .card-blog-body {
-    padding: 20px 25px;
+    padding: 15px 5px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s; }
-    @media (min-width: 1200px) {
-      .card-blog .card-blog-body {
-        padding: 25px 2px 30px 25px; } }
     .card-blog .card-blog-body h4 {
       font-size: 20px;
       margin-bottom: 15px; }
@@ -1991,9 +1989,9 @@ button.button {
 	============================================================================================ */
 @media (min-width: 768px) {
   #creatorCarousel {
-    /* show 3 items */
+    /* show 6 items */
     /* left or forward direction */
-    /* farthest right hidden item must be abso position for animations */
+    /* farthest right hidden item must be also position for animations */
     /* right or prev direction */ }
     #creatorCarousel .carousel-inner .active,
     #creatorCarousel .carousel-inner .active + .carousel-item,
@@ -2001,18 +1999,15 @@ button.button {
     #creatorCarousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item,
     #creatorCarousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
     #creatorCarousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      display: block; }
+      display: block;
+      position: relative; }
     #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
-    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item,
-    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
-    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    #creatorCarousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
       transition: none; }
     #creatorCarousel .carousel-inner .carousel-item-next,
     #creatorCarousel .carousel-inner .carousel-item-prev {
       position: relative;
-      transform: translate3d(0, 0, 0); }
+      transform: translateX(0); }
     #creatorCarousel .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
       position: absolute;
       top: 0;
@@ -2028,14 +2023,11 @@ button.button {
     #creatorCarousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
     #creatorCarousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
       position: relative;
-      transform: translate3d(-100%, 0, 0);
+      transform: translateX(-100%);
       visibility: visible; }
     #creatorCarousel .carousel-inner .carousel-item-prev.carousel-item-right {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      display: block;
+      position: relative;
+      transform: translate3d(0, 50, 0);
       visibility: visible; }
     #creatorCarousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
     #creatorCarousel .carousel-item-prev.carousel-item-right + .carousel-item,
@@ -2045,9 +2037,7 @@ button.button {
     #creatorCarousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
     #creatorCarousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
       position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-      display: block;
+      transform: translateX(100%);
       visibility: visible; } }
 
 #genreCarousel .carousel-inner .carousel-item.active,
