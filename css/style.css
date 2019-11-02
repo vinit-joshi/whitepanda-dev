@@ -1026,6 +1026,16 @@ h3, .h3 {
     .search-content p {
       margin-bottom: 40px; } }
 
+#driven-by-tech {
+  min-height: 600px;
+  clear: both;
+  background-image: url("../img/home/driven-by-tech-2.png");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: 100% 100%; }
+
 /*=================== contact banner start ====================*/
 .contact-info {
   margin-bottom: 12px; }
