@@ -43,6 +43,19 @@
   box-shadow: 0px 5px 10px 5px #ddd;
   border-radius: 5px; }
 
+#driven-by-tech {
+  min-height: 600px;
+  clear: both;
+  background-image: url("../img/home/driven-by-tech-2.png");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: 100% 100%; }
+
+.expert-card img {
+  padding: 20px; }
+
 /* font family
 	============================================================================================ */
 /* color variables
@@ -1025,16 +1038,6 @@ h3, .h3 {
   @media (min-width: 768px) {
     .search-content p {
       margin-bottom: 40px; } }
-
-#driven-by-tech {
-  min-height: 600px;
-  clear: both;
-  background-image: url("../img/home/driven-by-tech-2.png");
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: 100% 100%; }
 
 /*=================== contact banner start ====================*/
 .contact-info {

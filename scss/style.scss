@@ -48,6 +48,21 @@
 	border-radius: 5px;
 }
 
+#driven-by-tech {
+  min-height: 600px;
+  clear: both;
+  background-image: url('../img/home/driven-by-tech-2.png');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100% 100%;
+}
+
+.expert-card {
+  img {
+    padding: 20px;
+  }
+}
+
 @import "modules/variables";
 @import "modules/mixins";
 @import "modules/reset";
