@@ -54,7 +54,7 @@ $(function() {
     });
 
     $('#content-carousel').owlCarousel({
-        items: 3,
+        items: isMobile ? 1 : 3,
         loop: true,
         margin: 4,
         autoplay: true,
