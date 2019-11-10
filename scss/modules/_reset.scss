@@ -38,12 +38,12 @@ h6 {
 	font-family: $title-font;
 	color: $title-color;
 	line-height: 1.25;
+  font-weight: 700;
 }
 
 h1,
 .h1 {
-  font-size: 50px;
-  // font-weight: 700;
+  font-size: 48px;
 }
 h2,
 .h2 {
@@ -55,7 +55,6 @@ h2,
 }
 h3,.h3{
   font-size: 20px;
-  // font-weight: 500;
 }
 
 
@@ -64,7 +63,7 @@ h3,.h3{
   color: $primary-color;
 }
 .bg-gray{
-  background-color: #f8f8ff;
+  background-color: #f9f9f9;
 }
 
 .pb-90px{
@@ -73,12 +72,6 @@ h3,.h3{
   @media(min-width: 992px){
     padding-bottom: 90px;
   }
-}
-
-
-
-.mh-tour{
-  max-height: 630px;
 }
 
 
@@ -116,6 +109,15 @@ h3,.h3{
   @media(min-width: 1200px){
     margin-top: 250px;
   }
+}
+
+.text-highlight {
+  color: $primary-color;
+}
+
+a.wp-link {
+  color: $text-color;
+  text-decoration: underline;
 }
 
 /* global style end

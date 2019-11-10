@@ -1,0 +1,33 @@
+.faq-box {
+    border-top: 1px solid #ddd;
+}
+
+.panel-heading {
+    padding: 5px 5px;
+    border-top: 1px solid #ddd;
+
+    .accordion-toggle {
+        font-size: 0.7em;
+        color: #000;
+
+        &.collapsed:after {
+            content: "\f105";
+        }
+    }
+
+    .accordion-toggle:after {
+        font-family: 'Font Awesome 5 Free';
+        font-style: normal;
+        font-weight: 900;
+        content: "\f107";
+        float: right;
+        color: grey;
+        vertical-align: middle;
+        padding: 5px 5px;
+    }
+}
+
+.panel-body {
+    padding: 5px 5px;
+    margin-bottom: 5px;
+}

@@ -1,8 +1,8 @@
 /*=================== custom button rule start ====================*/
 .button{
   display: inline-block;
-  background-color: $white;
-  color: $primary-color;
+  background-color: $primary-color;
+  color: $white;
   border: 1px solid $primary-color;
   border-radius: 5px;
   padding: 8px 25px;
@@ -12,19 +12,10 @@
   @media(min-width: 600px){
     padding: 12px 45px;
   }
-
-  &:hover{
-    background-color: #0b9a90;
-    color: $white;
-  }
 }
 
 .button-hero{
   font-weight: 500;
-}
-
-.button-contactForm{
-  border-radius: 5px;
 }
 
 .button-shadow{

@@ -21,44 +21,6 @@ $(function() {
     };
     //navbarFixed();
 
-    // $('#creatorCarousel').on('slide.bs.carousel', function(e) {
-
-    //     var $e = $(e.relatedTarget);
-    //     var idx = $e.index();
-    //     var itemsPerSlide = 6;
-    //     var totalItems = $('#creatorCarousel .carousel-item').length;
-
-    //     if (idx >= totalItems - (itemsPerSlide - 1)) {
-    //         var it = itemsPerSlide - (totalItems - idx);
-    //         for (var i = 0; i < it; i++) {
-    //             // append slides to end
-    //             if (e.direction == "left") {
-    //                 $('#creatorCarousel .carousel-item').eq(i).appendTo('#creatorCarousel .carousel-inner').animate("fast");
-    //             } else {
-    //                 $('#creatorCarousel .carousel-item').eq(0).appendTo('#creatorCarousel .carousel-inner').animate("fast");
-    //             }
-    //         }
-    //     }
-    // });
-
-    // $('#genreCarousel.carousel .carousel-item').each(function() {
-    //     var next = $(this).next();
-    //     if (!next.length) {
-    //         next = $(this).siblings(':first');
-    //     }
-    //     next.children(':first-child').clone().appendTo($(this));
-
-    //     for (var i = 0; i < 3; i++) {
-    //         next = next.next();
-    //         if (!next.length) {
-    //             next = $(this).siblings(':first');
-    //         }
-
-    //         next.children(':first-child').clone().appendTo($(this));
-    //     }
-    // });
-
-
     $('select').niceSelect();
 
     /*-------------------------------------------------------------------------------
@@ -88,6 +50,15 @@ $(function() {
         margin: 20,
         autoplay: true,
         autoplayTimeout: 3000,
+        autoplayHoverPause: true
+    });
+
+    $('#content-carousel').owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 4,
+        autoplay: true,
+        autoplayTimeout: 5000,
         autoplayHoverPause: true
     });
 
