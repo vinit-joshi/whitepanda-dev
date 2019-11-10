@@ -37,7 +37,7 @@ $(function() {
         $('#expert-carousel').owlCarousel({
             items: isMobile ? 1 : 6,
             loop: true,
-            margin: 10,
+            margin: isMobile ? 5 : 10,
             autoplay: true,
             autoplayTimeout: 2000,
             autoplayHoverPause: true
@@ -47,7 +47,7 @@ $(function() {
     $('#genre-carousel').owlCarousel({
         items: 3,
         loop: true,
-        margin: 20,
+        margin: isMobile ? 10 : 20,
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true
@@ -56,7 +56,7 @@ $(function() {
     $('#content-carousel').owlCarousel({
         items: isMobile ? 1 : 3,
         loop: true,
-        margin: 4,
+        margin: isMobile ? 2 : 4,
         autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true
