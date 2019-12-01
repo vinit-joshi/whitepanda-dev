@@ -2,6 +2,9 @@
 	============================================================================================ */
 .hero-banner{
   padding-top: 120px;
+  p {
+    font-size: 18px;
+  }
 
   @media(min-width: 992px){
     padding-top: 160px;
@@ -50,8 +53,7 @@
 }
 
 .hero-banner-img {
-  min-height:445px;
-  min-width:335px;
+  min-height: 335px;
 }
 
 /* banner section end

@@ -54,9 +54,9 @@ $(function() {
     });
 
     $('#content-carousel').owlCarousel({
-        items: isMobile ? 1 : 3,
+        items: isMobile ? 1 : 3.3,
         loop: true,
-        margin: isMobile ? 2 : 4,
+        margin: 1,
         autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true

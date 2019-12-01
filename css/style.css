@@ -23,13 +23,14 @@
 /* mixin end
 	============================================================================================ */
 /* global style start
-	============================================================================================ */
+  ============================================================================================ */
 body {
   color: #1d3f5a;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.667; }
+  letter-spacing: normal;
+  line-height: 1.66; }
 
 ul {
   list-style-type: none;
@@ -68,7 +69,8 @@ h2,
     .h2 {
       font-size: 36px; } }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 20px; }
 
 .primary-text {
@@ -93,32 +95,43 @@ h3, .h3 {
   margin: 65px 0; }
   @media (min-width: 992px) {
     .section-margin-large {
-      margin: 140px 0; } }
+      margin: 70px 0; } }
 
 .section-padding {
   padding: 65px 0; }
   @media (min-width: 992px) {
     .section-padding {
-      padding: 130px 0; } }
+      padding: 65px 0; } }
 
 .generic-margin {
   margin-top: 100px; }
   @media (min-width: 992px) {
     .generic-margin {
-      margin-top: 180px; } }
+      margin-top: 100px; } }
   @media (min-width: 1200px) {
     .generic-margin {
-      margin-top: 250px; } }
+      margin-top: 125px; } }
 
 .text-highlight {
   color: #3ebcb3; }
 
 a.wp-link {
   color: #1d3f5a;
+  font-weight: 425;
   text-decoration: underline; }
 
+a.wp-link-normal {
+  color: #1d3f5a;
+  font-size: 12px;
+  text-decoration: underline; }
+
+.intro-text {
+  font-size: 24px;
+  color: #1d3f5a;
+  font-weight: 500; }
+
 /* global style end
-	============================================================================================ */
+  ============================================================================================ */
 /* header style start
   ============================================================================================ */
 .header_area {
@@ -528,6 +541,8 @@ a.wp-link {
 	============================================================================================ */
 .hero-banner {
   padding-top: 120px; }
+  .hero-banner p {
+    font-size: 18px; }
   @media (min-width: 992px) {
     .hero-banner {
       padding-top: 160px; } }
@@ -560,8 +575,7 @@ a.wp-link {
   max-width: 400px; }
 
 .hero-banner-img {
-  min-height: 445px;
-  min-width: 335px; }
+  min-height: 335px; }
 
 /* banner section end
   ============================================================================================ */
@@ -606,11 +620,12 @@ a.wp-link {
 /* section intro end
 	============================================================================================ */
 .card-category {
-  height: 315px;
-  width: 315px; }
+  min-height: 315px;
+  min-width: 315px; }
   .card-category .card-category-body {
-    padding: 48px 35px;
-    box-shadow: 0px 10px 20px 0px rgba(14, 30, 112, 0.1);
+    padding: 35px 45px;
+    box-shadow: 0 2px 10px 0px rgba(58, 59, 101, 0.3);
+    border-radius: 2px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -641,6 +656,8 @@ a.wp-link {
     .card-category-info li i,
     .card-category-info li span {
       margin-right: 5px; }
+  .card-category-info .rating {
+    color: #f25c69; }
 
 .service-card {
   background: #f8f8ff;
@@ -670,8 +687,12 @@ a.wp-link {
 
 .card-blog {
   padding: 10px 15px; }
+  .card-blog .card-img {
+    box-shadow: 0 4px 31px 5px rgba(58, 59, 101, 0.03), 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    background: #fff; }
   .card-blog .card-blog-body {
-    padding: 15px 5px;
+    padding: 3px 1px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -701,10 +722,25 @@ a.wp-link {
 
 .driven-by-tech {
   clear: both;
-  background-image: url("../img/home/driven-by-tech-5.png");
+  background-image: url("../img/home/driven-by-tech.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 99% 99%; }
+  background-size: 100% 100%; }
+  @media (min-width: 576px) {
+    .driven-by-tech .driven-by-tech-content {
+      min-height: 576px; } }
+  @media (min-width: 768px) {
+    .driven-by-tech .driven-by-tech-content {
+      min-height: 576px; } }
+  @media (min-width: 992px) {
+    .driven-by-tech .driven-by-tech-content {
+      min-height: 576px; } }
+  @media (min-width: 1200px) {
+    .driven-by-tech .driven-by-tech-content {
+      min-height: 576px; } }
+  @media (min-width: 1440px) {
+    .driven-by-tech .driven-by-tech-content {
+      min-height: 876px; } }
 
 .faq-box {
   border-top: 1px solid #ddd; }
@@ -946,7 +982,7 @@ button.button {
         color: #3ebcb3; }
 
 .footer-bottom {
-  width: 66%;
+  width: 33%;
   padding: 18px 0;
   margin-top: 30px;
   border-top: 1px solid #eee; }
@@ -954,9 +990,11 @@ button.button {
     .footer-bottom {
       margin-top: 30px; } }
 
-.footer-text a,
-.footer-text i {
-  color: #3ebcb3; }
+.footer-text {
+  font-size: 11px; }
+  .footer-text a,
+  .footer-text i {
+    color: #3ebcb3; }
 
 /* footer style end
   ============================================================================================ */
