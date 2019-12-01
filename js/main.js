@@ -33,6 +33,14 @@ $(function() {
         isMobile = true;
     }
 
+    var isIpad = false;
+    if (isMobile && window.innerWidth > 768 && window.innerWidth < 992) {
+        isIpad = true;
+    }
+    else if (isMobile && window.innerWidth > 992) {
+       isMobile = false;
+    }
+
     if ($('#expert-carousel').length) {
         $('#expert-carousel').owlCarousel({
             items: isMobile ? 1 : 6,
@@ -54,10 +62,10 @@ $(function() {
     });
 
     $('#content-carousel').owlCarousel({
-        items: isMobile ? 1 : 3.3,
+        items: isMobile ? (isIpad ? 2 : 1) : 3.3,
         loop: true,
-        margin: 1,
-        autoplay: true,
+        margin: 0,
+        autoplay: false,
         autoplayTimeout: 5000,
         autoplayHoverPause: true
     });
