@@ -65,7 +65,7 @@ $(function() {
         items: isMobile ? (isIpad ? 2 : 1) : 3.3,
         loop: true,
         margin: 0,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true
     });
