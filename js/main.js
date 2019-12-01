@@ -37,7 +37,7 @@ $(function() {
     if (isMobile && window.innerWidth > 768 && window.innerWidth < 992) {
         isIpad = true;
     }
-    else if (isMobile && window.innerWidth > 992) {
+    else if (isMobile && window.innerWidth > 1039) {
        isMobile = false;
     }
 
